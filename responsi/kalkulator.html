@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>kalkulator</title>
+
+    <style>
+        td{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body class="card2">
+    <script src="hitung.js">
+    </script>
+    
+    <form name="form">
+        <table width="15%" border="2">
+
+            <tr>
+                <td colspan="4">
+                    <input type="textarea" name="monitor">
+                </td>
+                    
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="angka(1)">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="angka(2)">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="angka(3)">
+                </td>
+                <td>
+                    <input type="button" value="*" onclick="angka('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="angka(4)">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="angka(5)">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="angka(6)">
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="angka('/')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="angka(7)">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="angka(8)">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="angka(9)">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="angka('+')">
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="3">
+                    <input type="button" value="0" onclick="angka('0')">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="angka('-')">
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <input type="button" value="del" onclick="hapus()">
+                </td>
+                <td>
+                    <input type="button" value="." onclick="angka('.')">
+                </td>
+                <td colspan="2">
+                    <input type="button" value="=" onclick="hitung()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <center><a href="index.html" style="color: rgb(255, 89, 0);">kembali</a></center>
+</body>
+</html>
